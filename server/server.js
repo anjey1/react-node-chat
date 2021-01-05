@@ -29,7 +29,6 @@ const wsHandler = (ws) => {
     }
     parsedMessage.usersCache = usersCache
     connections.forEach((conn) => conn.send(JSON.stringify(parsedMessage)))
-
   })
 
   // Close chat Handler
